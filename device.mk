@@ -458,5 +458,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+PRODUCT_VENDOR_KERNEL_HEADERS := device/asus/X00P-kernel/89xx/kernel-headers
+
 # Inherit common proprietary files
 $(call inherit-product, vendor/asus/X00P/X00P-vendor.mk)
