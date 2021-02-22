@@ -270,8 +270,6 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libOmxSwVencHevc \
-    libOmxVdec \
-    libOmxVenc \
     libstagefrighthw
 
 # Permissions
