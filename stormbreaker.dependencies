@@ -1,0 +1,13 @@
+[
+  {
+    "repository":  "device_asus_X00P-kernel",
+    "target_path": "device/asus/X00P-kernel",
+    "branch": "reikon"
+  },
+  {
+    "repository":  "vendor_asus_x00p",
+    "target_path": "vendor/asus/X00P",
+    "branch": "reikon",
+    "remote": "gitlab/StormBreaker-project"
+  }
+]
