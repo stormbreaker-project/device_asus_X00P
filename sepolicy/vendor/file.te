@@ -4,3 +4,6 @@ type power_sysfs, fs_type, sysfs_type;
 type rild_file, file_type, vendor_file_type;
 type touch_sysfs, fs_type, sysfs_type;
 type proc_touchpanel, proc_type, sysfs_type, fs_type;
+
+# Fingerprint
+type sf_data_file, core_data_file_type, data_file_type, file_type;
