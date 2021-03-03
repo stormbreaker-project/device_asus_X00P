@@ -27,8 +27,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # Inherit from X00P device
 $(call inherit-product, device/asus/X00P/device.mk)
 
-# Inherit PixelExperience stuff
-$(call inherit-product, vendor/stormbreaker/config/common.mk)
+# Inherit StormBreaker stuff
+$(call inherit-product, vendor/stormbreaker/config/common_telephony.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
