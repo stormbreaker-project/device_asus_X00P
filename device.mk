@@ -447,10 +447,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/firmware/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/firmware/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini
 
-# WiFi Display
-PRODUCT_BOOT_JARS += \
-    WfdCommon
-
 PRODUCT_VENDOR_KERNEL_HEADERS := device/asus/X00P-kernel/89xx/kernel-headers
 
 # Inherit common proprietary files
