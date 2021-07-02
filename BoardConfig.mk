@@ -83,7 +83,6 @@ BUILD_BROKEN_DUP_RULES := true
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_TS_MAKEUP := true
 TARGET_USES_QTI_CAMERA_DEVICE := true
-USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Charger
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
@@ -99,7 +98,6 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := true
-USE_DEVICE_SPECIFIC_GPS := true
 
 # GPU
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
@@ -114,9 +112,6 @@ TARGET_USES_ION := true
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
-# HWUI
-HWUI_COMPILE_FOR_PERF := true
-
 # Kernel
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci earlycon=msm_hsl_uart,0x78B0000
@@ -129,9 +124,6 @@ TARGET_KERNEL_CONFIG := X00P_defconfig
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/asus/X00P
-
-# Malloc
-MALLOC_SVELTE := true
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
@@ -160,10 +152,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
-TARGET_HAS_NO_POWER_STATS := true
 
 # Properties
-TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Qualcomm support
@@ -174,7 +164,6 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
-TARGET_USES_OLD_MNC_FORMAT := true
 
 # Security patch level
 VENDOR_SECURITY_PATCH := 2020-03-05
@@ -184,8 +173,6 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Treble
-BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
 BOARD_VNDK_RUNTIME_DISABLE := true
 
