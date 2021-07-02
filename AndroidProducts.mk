@@ -14,10 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_X00P.mk
+    $(LOCAL_DIR)/stormbreaker_X00P.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_X00P-user \
-    aosp_X00P-userdebug \
-    aosp_X00P-eng
+    stormbreaker_X00P-user \
+    stormbreaker_X00P-userdebug \
+    stormbreaker_X00P-eng
 

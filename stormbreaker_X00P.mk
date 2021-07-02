@@ -26,20 +26,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # Inherit from X00P device
 $(call inherit-product, device/asus/X00P/device.mk)
 
-# Inherit PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit StormBreakerOSS stuff
+$(call inherit-product, vendor/stormbreaker/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
-# PixelExperience specifics
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
 # Device identifiers.
 PRODUCT_DEVICE := X00P
-PRODUCT_NAME := aosp_X00P
+PRODUCT_NAME := stormbreaker_X00P
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X00PD
 PRODUCT_MANUFACTURER := asus
